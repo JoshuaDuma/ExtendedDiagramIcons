@@ -36,7 +36,7 @@ jobs:
       - name: Copy resources folder to package
         run: |
           mkdir ExtendedDiagramIcons/resources/
-          cp -r resources/* ./ExtendedDiagramIcons/resources/*
+          cp -r resources/* ./ExtendedDiagramIcons/resources
       - name: Publish
         run: |
           python setup.py sdist bdist_wheel
