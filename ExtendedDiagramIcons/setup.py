@@ -18,8 +18,8 @@ setup(
     long_description_content_type="text/markdown",
     url="",
     include_package_data=True,
-    include=["resources/**/*"]
-    repository="https://github.com/JoshuaDuma/ExtendedDiagramIcons"
+    include=["resources/**/*"],
+    repository="https://github.com/JoshuaDuma/ExtendedDiagramIcons",
     packages=find_packages(),
     install_requires=[
         "diagrams>=0.23.4"
