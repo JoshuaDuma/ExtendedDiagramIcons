@@ -9,8 +9,5 @@ class JIRA(CustomNode):
 class GitHub(CustomNode):
     _icon = "github_icon.png"
 
-class CRIMTools(CustomNode):
-    _icon = "crim_tools_icon.png"
-
 class ReportPortal(CustomNode):
-    _icon = "report_portal_icon.jpg"
+    _icon = "report_portal_icon.png"

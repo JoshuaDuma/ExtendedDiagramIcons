@@ -9,6 +9,7 @@ from ExtendedDiagramIcons.generic import softwareEngineer
 from ExtendedDiagramIcons.generic import JIRA
 from ExtendedDiagramIcons.generic import GitHub
 from ExtendedDiagramIcons.generic import ReportPortal
+from ExtendedDiagramIcons.dnsProviders.namecheap import NamecheapProvider, NamecheapDomain, NamecheapAPI
 
 def octopusDeploy_icon(val):
     return octopusDeployProgram(val)
@@ -39,3 +40,12 @@ def GitHub_icon(val):
 
 def ReportPortal_icon(val):
     return ReportPortal(val)
+
+def NamecheapProvider_icon(val):
+    return NamecheapProvider(val)
+
+def NamecheapDomain_icon(val):
+    return NamecheapDomain(val)
+
+def NamecheapAPI_icon(val):
+    return NamecheapAPI(val)

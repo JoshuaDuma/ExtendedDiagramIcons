@@ -8,10 +8,11 @@ from ExtendedDiagramIcons.module1 import octopusDeployWorkerPool_icon
 from ExtendedDiagramIcons.module1 import octpusDeployRelease_icon
 from ExtendedDiagramIcons.module1 import softwareEngineer_icon
 from ExtendedDiagramIcons.module1 import JIRA_icon
-from ExtendedDiagramIcons.module1 import CRIM_icon
 from ExtendedDiagramIcons.module1 import GitHub_icon
-from ExtendedDiagramIcons.module1 import CRIMTools_icon
 from ExtendedDiagramIcons.module1 import ReportPortal_icon
+from ExtendedDiagramIcons.module1 import NamecheapProvider_icon
+from ExtendedDiagramIcons.module1 import NamecheapDomain_icon
+from ExtendedDiagramIcons.module1 import NamecheapAPI_icon
 
 class TestCase(unittest.TestCase):
     def test_icon_map(self):
@@ -27,10 +28,12 @@ class TestCase(unittest.TestCase):
             with Cluster("generic"):
                 softwareEngineer_icon("Software Engineer")
                 JIRA_icon("JIRA")
-                CRIM_icon("CRIM Team")
                 GitHub_icon("GitHub")
-                CRIMTools_icon("CRIM Tools")
                 ReportPortal_icon("Report Portal")
+            with Cluster("dns-providers"):
+                NamecheapProvider_icon("NamecheapProvider")
+                NamecheapDomain_icon("NamecheapDomain")
+                NamecheapAPI_icon("NamecheapAPI")
 
 if __name__ == "__main__":
     unittest.main()
