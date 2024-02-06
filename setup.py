@@ -8,10 +8,6 @@ def get_version():
         exec(f.read(), locals)
         return locals["__version__"]
 
-def get_reources():
-    basedir = os.path.dirname(__file__)
-    return os.path.join(basedir, "/resources/**/*.png")
-
 setup(
     name="ExtendedDiagramIcons",
     version=get_version(),
@@ -23,7 +19,7 @@ setup(
     url="",
     include_package_data=True,
     package_data={
-        'ExtendedDiagramIcons': [get_reources()],  # Include only .png files in some_folder
+        'ExtendedDiagramIcons': ['../resources/**/*.png'],  # Include only .png files in some_folder
     },
     repository="https://github.com/JoshuaDuma/ExtendedDiagramIcons",
     packages=find_packages(),
