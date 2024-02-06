@@ -19,7 +19,7 @@ To publish the latest version of this project use the following:
 
 # Semantic Release
 
-[![GitHub Actions](https://github.com/JoshuaDuma/ExtendedDiagramIcons/actions/workflows/development.yml/badge.svg)](https://github.com/JoshuaDuma/ExtendedDiagramIcons/actions)
+[![GitHub Actions](https://github.com/JoshuaDuma/ExtendedDiagramIcons/actions/workflows/dev.yml/badge.svg)](https://github.com/JoshuaDuma/ExtendedDiagramIcons/actions)
 [![GitHub Actions](https://github.com/JoshuaDuma/ExtendedDiagramIcons/actions/workflows/main.yml/badge.svg)](https://github.com/JoshuaDuma/ExtendedDiagramIcons/actions)
 
 ## Continuous Integration (CI)
@@ -38,21 +38,21 @@ In our project, we adhere to [Semantic Versioning](https://semver.org/) to stand
 **Description:** A new feature for the user or a particular improvement to existing functionalities.  
 **Example:** `feat: add new login button`  
 **Effect:** Increments the *minor* version.  
-**Branches:** Typically used on both `development` and `release` branches.
+**Branches:** Typically used on both `dev` and `release` branches.
 
 ### 2. `fix:`
 
 **Description:** A bug fix that resolves an issue affecting the user.  
 **Example:** `fix: resolve issue with login button not responding`  
 **Effect:** Increments the *patch* version.  
-**Branches:** Typically used on both `development` and `release` branches.
+**Branches:** Typically used on both `dev` and `release` branches.
 
 ### 3. `chore:`
 
 **Description:** Simple changes that are not part of application logic or business features.  
 **Example:** `chore: update dependencies`  
 **Effect:** No version increment unless combined with other prefixes.  
-**Branches:** Typically used on `development` branch.
+**Branches:** Typically used on `dev` branch.
 
 ### 4. `docs:`
 
@@ -80,7 +80,7 @@ In our project, we adhere to [Semantic Versioning](https://semver.org/) to stand
 **Description:** Changes that improve performance.  
 **Example:** `perf: enhance query performance`  
 **Effect:** May increment the *patch* version if significant.  
-**Branches:** Typically used on both `development` and `release` branches.
+**Branches:** Typically used on both `dev` and `release` branches.
 
 ### 8. `test:`
 
@@ -98,9 +98,9 @@ In our project, we adhere to [Semantic Versioning](https://semver.org/) to stand
 
 ## Branches
 
-### 1. `development`
+### 1. `dev`
 
-**Purpose:** Regular development and feature additions happen here.  
+**Purpose:** Regular dev and feature additions happen here.  
 **Versioning:** Automated version increments happen for *minor* and *patch* changes using the `feat:` and `fix:` prefixes.
 
 ### 2. `release/main`
@@ -116,7 +116,7 @@ By adhering to this strategy, we ensure consistency, predictability, and ease of
 
 # Semantic Versioning Workflow
 
-## development (Pre-release) Branch
+## dev (Pre-release) Branch
 
 ### Steps:
 
@@ -124,13 +124,13 @@ By adhering to this strategy, we ensure consistency, predictability, and ease of
    - [No Commits]
 
 2. **Commit: `feat: add new feature`**
-   - [Generates Version & Tag: **1.1.0-development.0**]
+   - [Generates Version & Tag: **1.1.0-dev.0**]
 
 3. **Commit: `fix: resolve minor bug`**
-   - [Generates Version & Tag: **1.1.0-development.1**]
+   - [Generates Version & Tag: **1.1.0-dev.1**]
 
 4. **Commit: `chore: update dependencies`**
-   - [No Version Change: Remains **1.1.0-development.1**]
+   - [No Version Change: Remains **1.1.0-dev.1**]
 
 5. **Merge into main:**
    - [Commits are merged, triggers a check for release in main branch]
@@ -144,7 +144,7 @@ By adhering to this strategy, we ensure consistency, predictability, and ease of
 1. **Start:**
    - [Current Version: **1.0.0**]
 
-2. **Merge from development (with `feat` & `fix` commits):**
+2. **Merge from dev (with `feat` & `fix` commits):**
    - [Checks Commits: Finds `feat:` & `fix:`, hence eligible for release]
    - [Generates Version & Tag: **1.1.0**]
 
@@ -152,11 +152,11 @@ By adhering to this strategy, we ensure consistency, predictability, and ease of
 
 ## Explanation
 
-- **development Branch (Pre-release):**
+- **dev Branch (Pre-release):**
   - New features (`feat:`) and bug fixes (`fix:`) increment the pre-release version.
   - Commits like `chore:`, `docs:`, etc. do not change the version.
-  - Each commit or PR that changes the version generates a new pre-release tag like `1.1.0-development.0`, `1.1.0-development.1`, etc.
+  - Each commit or PR that changes the version generates a new pre-release tag like `1.1.0-dev.0`, `1.1.0-dev.1`, etc.
 
 - **main Branch (Release):**
-  - When changes are merged from `development` to `main`, it checks for commits with `feat:` or `fix:` prefixes.
+  - When changes are merged from `dev` to `main`, it checks for commits with `feat:` or `fix:` prefixes.
   - If found, it increments the appropriate version number (minor for `feat:` and patch for `fix`)

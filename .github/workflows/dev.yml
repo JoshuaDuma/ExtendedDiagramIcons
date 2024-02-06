@@ -1,9 +1,9 @@
-name: Development Branch CI
+name: dev Branch CI
 
 on:
   push:
     branches:
-      - 'development'
+      - 'dev'
 
 jobs:
   Publish:
@@ -32,7 +32,7 @@ jobs:
       - name: Update version in __init__.py
         run: |
           cd ./ExtendedDiagramIcons/ExtendedDiagramIcons
-          VERSION=$(git tag --list | grep -E 'v[0-9]+\.[0-9]+\.[0-9]+-[^ ]+' | sort -V | tail -n1 | sed 's/^v//')
+          VERSION=$(git tag --list | grep -E 'v[0-9]+\.[0-9]+\.[0-9]+-[^ ]+' | sort -V | tail -n1 | sed 's/^v//' | sed 's/-dev\./.dev/')
           echo "__version__ = '$VERSION'" > "__init__.py"
       - name: Publish
         run: |
@@ -86,4 +86,4 @@ jobs:
           # Perform semantic release (SemVer)
           npx semantic-release
       - name: Output version
-        run: git tag --list | grep -E 'v[0-9]+\.[0-9]+\.[0-9]+-[^ ]+' | sort -V | tail -n1 | sed 's/^v//'
+        run: git tag --list | grep -E 'v[0-9]+\.[0-9]+\.[0-9]+-[^ ]+' | sort -V | tail -n1 | sed 's/^v//' | sed 's/-dev\./.dev/'
