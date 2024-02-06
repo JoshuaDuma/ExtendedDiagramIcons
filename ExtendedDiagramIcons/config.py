@@ -12,8 +12,8 @@ DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
-  "octopusDeploy",
-  "dndProviders",
+  "octopusdeploy",
+  "dnsproviders",
   "generic"
 )
 
@@ -29,8 +29,8 @@ CMD_SVG2PNG_IM = "convert"
 CMD_SVG2PNG_IM_OPTS = ("-shave", "25%x25%", "-resize", "256x256!")
 
 FILE_PREFIXES = {
-    "octopusDeploy": ("OctopusDeploy", "OD-"),
-    "dndProviders": (),
+    "octopusdeploy": (),
+    "dnsproviders": (),
     "generic": ()
 }
 
@@ -71,6 +71,9 @@ TITLE_WORDS = {
     "octopusdeploy": {
         "octopusdeploy": "OctopusDeploy",
     },
+    "dnsproviders": {
+        "dnsproviders": "DNSProviders",
+    },
     "alibabacloud": {
         "alibabacloud": "AlibabaCloud"
     },
@@ -90,6 +93,12 @@ TITLE_WORDS = {
 
 # TODO: check if the classname exists
 ALIASES = {
+    "octopusdeploy": {
+
+    },
+    "dnsproviders": {
+        
+    },
     "onprem": {
         "analytics": {
             "Powerbi": "PowerBI"

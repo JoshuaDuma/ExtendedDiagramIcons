@@ -9,6 +9,12 @@ from . import app_root_dir, doc_root_dir, resource_dir, template_dir, base_dir
 
 _usage = "Usage: generate.py <provider>"
 
+def make_directories(path):
+    # Ensure the directory exists
+    directory = os.path.dirname(path)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    return True
 
 def load_tmpl(tmpl: str) -> Template:
     env = Environment(loader=FileSystemLoader(template_dir()))
@@ -68,6 +74,7 @@ def gen_apidoc(pvd: str, typ_paths: dict) -> str:
 def make_module(pvd: str, typ: str, classes: str) -> None:
     """Create a module file"""
     mod_path = os.path.join(app_root_dir(pvd), f"{typ}.py")
+    make_directories(mod_path)
     with open(mod_path, "w+") as f:
         f.write(classes)
 
@@ -75,6 +82,7 @@ def make_module(pvd: str, typ: str, classes: str) -> None:
 def make_apidoc(pvd: str, content: str) -> None:
     """Create an api documentation file"""
     mod_path = os.path.join(doc_root_dir(), f"{pvd}.md")
+    make_directories(mod_path)
     with open(mod_path, "w+") as f:
         f.write(content)
 
@@ -91,8 +99,9 @@ def generate(pvd: str) -> None:
 
         # Skip the top-root directory.
         typ = os.path.basename(root)
-        if typ == pvd:
-            continue
+        
+        #if typ == pvd:
+        #    continue
 
         resource_root = os.path.relpath(root, base)
         classes = gen_classes(pvd, typ, paths)
