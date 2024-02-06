@@ -1,6 +1,7 @@
 import os
 import sys
 from typing import Iterable
+from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, Template, exceptions
 
@@ -29,6 +30,34 @@ def up_or_title(pvd: str, s: str) -> str:
         return cfg.TITLE_WORDS[pvd][s]
     return s.title()
 
+def relative_directory_depth_with_parent(relative_path):
+    """
+    Returns the depth of a directory structure relative to the current working directory.
+    The string representation of the directory level uses ".parent" for each level.
+    For example, if the relative_path is 'a/b/c', and all exist, the depth is 3 and the
+    string will be '.parent.parent.parent'.
+
+     Example usage:
+    # Please run this on your local machine with a valid relative directory path as this environment
+    # does not have access to an actual filesystem.
+
+    # relative_path = 'a/b/c'  # Replace with the relative path you want to check
+    # depth, parent_string = relative_directory_depth_with_parent(relative_path)
+    # print(f"Depth: {depth}, Parent String: {parent_string}")
+    """
+    depth = 0
+    parent_str = ""
+    current_path = os.path.abspath(relative_path)
+    
+    while os.path.dirname(current_path) != current_path:  # Check if we've reached the root
+        # Adjust for current directory
+        if os.path.exists(current_path) and depth > 3:
+            parent_str = '.parent' + parent_str
+        current_path = os.path.dirname(current_path)
+        depth += 1
+        
+    return parent_str
+
 
 def gen_classes(pvd: str, typ: str, paths: Iterable[str]) -> str:
     """Generate all service node classes based on resources paths with class templates."""
@@ -41,9 +70,14 @@ def gen_classes(pvd: str, typ: str, paths: Iterable[str]) -> str:
         name = "".join([up_or_title(pvd, s) for s in base.split("-")])
         return {"name": name, "icon": path}
 
+    mod_path = os.path.join(app_root_dir(pvd), f"{typ}.py")
+    # To get the relative path with respect to the application root directory:
+    common_path = Path(__file__).parent  # This would be your common path
+    relative_path = os.path.relpath(mod_path, common_path)
+    dir_lvl = relative_directory_depth_with_parent(relative_path)
     metas = map(_gen_class_meta, paths)
     aliases = cfg.ALIASES[pvd][typ] if typ in cfg.ALIASES[pvd] else {}
-    return tmpl.render(pvd=pvd, typ=typ, metas=metas, aliases=aliases)
+    return tmpl.render(dir_lvl=dir_lvl, pvd=pvd, typ=typ, metas=metas, aliases=aliases)
 
 
 def gen_apidoc(pvd: str, typ_paths: dict) -> str:
