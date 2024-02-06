@@ -136,7 +136,7 @@ def cleaner_openstack(f):
 
 
 cleaners = {
-    "onprem": cleaner_onprem,
+    "onprem": cleaner_onprem
     "aws": cleaner_aws,
     "azure": cleaner_azure,
     "digitalocean": cleaner_digitalocean,
