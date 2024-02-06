@@ -15,7 +15,7 @@ To publish the latest version of this project use the following:
 
 1. Install Twine: `pip install twine`
 2. Build your package: `python setup.py sdist bdist_wheel`
-3. To Upload your package, you will need your PyPI credentials (not avilable via CICD for security reasons): `twine upload dist/* -u __token__ -p pypi-AgEIcHlwaS5vcmcCJDAzZGE0ODNkLWY3NmYtNDhlNy1iMzgwLWRkZmMxM2QzYzBiYQACKlszLCJjYjI0YjE5ZC1lYmJmLTQyNzYtYjFmMS0zNjIxMjZlM2Q0YmMiXQAABiCJxarhN-DxG5fVMdPgrphuh7Uko5L1kyzi5upnwyzZaQ`
+3. To Upload your package, you will need your PyPI credentials (not avilable via CICD for security reasons): `twine upload dist/* -u __token__ -p <your-api-token>`
 
 # Semantic Release
 
