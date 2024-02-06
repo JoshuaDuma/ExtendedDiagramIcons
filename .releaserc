@@ -1,8 +1,8 @@
 {
     "branches": [
         "main",{
-            "name": "development",
-            "channel": "development",
+            "name": "dev",
+            "channel": "dev",
             "prerelease": true
         }
     ],
