@@ -7,11 +7,11 @@ class _Namecheap(_DNSProviders):
     _icon_dir = "resources/dnsproviders/namecheap"
 
 
-class Namecheap(_Namecheap):
-    _icon = "namecheap.png"
 class Namecheap_Api(_Namecheap):
     _icon = "namecheap_api.png"
 class Namecheap_Domain(_Namecheap):
     _icon = "namecheap_domain.png"
+class Namecheap_Provider(_Namecheap):
+    _icon = "namecheap_provider.png"
 
 # Aliases
