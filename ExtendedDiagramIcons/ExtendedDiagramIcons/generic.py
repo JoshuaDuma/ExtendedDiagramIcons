@@ -1,13 +1,17 @@
-from .common import CustomNode
+from . import _generic
 
-class softwareEngineer(CustomNode):
+class _Generic(_generic):
+    _type = "compute"
+    _icon_dir = "resources/generic"
+
+class softwareEngineer(_generic):
     _icon = "software_engineer_icon.png"
 
-class JIRA(CustomNode):
+class JIRA(_generic):
     _icon = "jira_icon.png"
 
-class GitHub(CustomNode):
+class GitHub(_generic):
     _icon = "github_icon.png"
 
-class ReportPortal(CustomNode):
+class ReportPortal(_generic):
     _icon = "report_portal_icon.png"
