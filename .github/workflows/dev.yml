@@ -31,7 +31,7 @@ jobs:
           pip install wheel
       - name: Update version in __init__.py
         run: |
-          cd ./ExtendedDiagramIcons/ExtendedDiagramIcons
+          cd ./ExtendedDiagramIcons
           VERSION=$(git tag --list | grep -E 'v[0-9]+\.[0-9]+\.[0-9]+-[^ ]+' | sort -V | tail -n1 | sed 's/^v//' | sed 's/-dev\./.dev/')
           echo "__version__ = '$VERSION'" > "__init__.py"
       - name: Publish

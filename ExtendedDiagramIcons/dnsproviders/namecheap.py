@@ -11,7 +11,7 @@ class Namecheap_Api(_Namecheap):
     _icon = "namecheap_api.png"
 class Namecheap_Domain(_Namecheap):
     _icon = "namecheap_domain.png"
-class Namecheap_Provider(_Namecheap):
-    _icon = "namecheap_provider.png"
+class Provider(_Namecheap):
+    _icon = "provider.png"
 
 # Aliases

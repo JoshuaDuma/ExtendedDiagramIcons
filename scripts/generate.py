@@ -101,8 +101,8 @@ def generate(pvd: str) -> None:
         # Skip the top-root directory.
         typ = os.path.basename(root)
         
-        #if typ == pvd:
-        #    continue
+        if typ == pvd:
+            continue
 
         resource_root = os.path.relpath(root, base)
         classes = gen_classes(pvd, typ, paths)
