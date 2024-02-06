@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 def get_version():
     basedir = os.path.dirname(__file__)
-    with open(os.path.join(basedir, "ExtendedDiagramIcons/__init__.py")) as f:
+    with open(os.path.join(basedir, "__init__.py")) as f:
         locals = {}
         exec(f.read(), locals)
         return locals["__version__"]
