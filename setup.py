@@ -18,7 +18,9 @@ setup(
     long_description_content_type="text/markdown",
     url="",
     include_package_data=True,
-    include=["resources/**/*"],
+    package_data={
+        'ExtendedDiagramIcons': ['../resources/**/*.png'],  # Include only .png files in some_folder
+    },
     repository="https://github.com/JoshuaDuma/ExtendedDiagramIcons",
     packages=find_packages(),
     install_requires=[
