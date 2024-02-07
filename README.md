@@ -17,6 +17,103 @@ To publish the latest version of this project use the following:
 2. Build your package: `python setup.py sdist bdist_wheel`
 3. To Upload your package, you will need your PyPI credentials (not avilable via CICD for security reasons): `twine upload dist/* -u __token__ -p <your-api-token>`
 
+## Documentation
+
+To use the below files
+
+<!-- START_SECTION:Documentation -->
+---
+id: octopusdeploy
+title: OctopusDeploy
+---
+
+Node classes list of octopusdeploy provider.
+
+## octopusdeploy.octopusdeploy
+
+
+<img width="30" src="/resources/octopusdeploy/octopus_deploy.png" alt="Octopus_Deploy" style="float: left; padding-right: 5px;" >
+**diagrams.octopusdeploy.octopusdeploy.Octopus_Deploy**
+
+<img width="30" src="/resources/octopusdeploy/octopus_server_node.png" alt="Octopus_Server_Node" style="float: left; padding-right: 5px;" >
+**diagrams.octopusdeploy.octopusdeploy.Octopus_Server_Node**
+
+<img width="30" src="/resources/octopusdeploy/octopus_worker_node.png" alt="Octopus_Worker_Node" style="float: left; padding-right: 5px;" >
+**diagrams.octopusdeploy.octopusdeploy.Octopus_Worker_Node**
+
+<img width="30" src="/resources/octopusdeploy/octopus_worker_pool.png" alt="Octopus_Worker_Pool" style="float: left; padding-right: 5px;" >
+**diagrams.octopusdeploy.octopusdeploy.Octopus_Worker_Pool**
+
+<img width="30" src="/resources/octopusdeploy/pipeline.png" alt="Pipeline" style="float: left; padding-right: 5px;" >
+**diagrams.octopusdeploy.octopusdeploy.Pipeline**
+
+<img width="30" src="/resources/octopusdeploy/release.png" alt="Release" style="float: left; padding-right: 5px;" >
+**diagrams.octopusdeploy.octopusdeploy.Release**
+
+
+---
+id: dnsproviders
+title: DNSProviders
+---
+
+Node classes list of dnsproviders provider.
+
+## dnsproviders.dnsproviders
+
+
+## dnsproviders.namecheap
+
+
+<img width="30" src="/resources/dnsproviders/namecheap/namecheap_api.png" alt="Namecheap_Api" style="float: left; padding-right: 5px;" >
+**diagrams.dnsproviders.namecheap.Namecheap_Api**
+
+<img width="30" src="/resources/dnsproviders/namecheap/namecheap_domain.png" alt="Namecheap_Domain" style="float: left; padding-right: 5px;" >
+**diagrams.dnsproviders.namecheap.Namecheap_Domain**
+
+<img width="30" src="/resources/dnsproviders/namecheap/provider.png" alt="Provider" style="float: left; padding-right: 5px;" >
+**diagrams.dnsproviders.namecheap.Provider**
+
+
+---
+id: digitalocean
+title: DigitalOcean
+---
+
+Node classes list of digitalocean provider.
+
+## digitalocean.digitalocean
+
+
+<img width="30" src="/resources/digitalocean/project.png" alt="Project" style="float: left; padding-right: 5px;" >
+**diagrams.digitalocean.digitalocean.Project**
+
+
+---
+id: generic
+title: Generic
+---
+
+Node classes list of generic provider.
+
+## generic.generic
+
+
+<img width="30" src="/resources/generic/github.png" alt="Github" style="float: left; padding-right: 5px;" >
+**diagrams.generic.generic.Github**
+
+<img width="30" src="/resources/generic/jira.png" alt="Jira" style="float: left; padding-right: 5px;" >
+**diagrams.generic.generic.Jira**
+
+<img width="30" src="/resources/generic/report_portal.png" alt="Report_Portal" style="float: left; padding-right: 5px;" >
+**diagrams.generic.generic.Report_Portal**
+
+<img width="30" src="/resources/generic/software_engineer.png" alt="Software_Engineer" style="float: left; padding-right: 5px;" >
+**diagrams.generic.generic.Software_Engineer**
+
+
+
+<!-- END_SECTION:Documentation -->
+
 # Semantic Release
 
 [![GitHub Actions](https://github.com/JoshuaDuma/ExtendedDiagramIcons/actions/workflows/dev.yml/badge.svg)](https://github.com/JoshuaDuma/ExtendedDiagramIcons/actions)

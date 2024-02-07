@@ -15,3 +15,5 @@ for pvd in "${providers[@]}"; do
   echo "generating the modules & docs for provider '$pvd'"
   python3 -m scripts.generate "$pvd"
 done
+
+python3 -m scripts.update
