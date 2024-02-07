@@ -17,9 +17,24 @@ jobs:
       id-token: write # to enable use of OIDC for npm provenance
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
+      - name: Update nodes and documentation
+        run: |
+          app_root_dir="ExtendedDiagramIcons"
+          providers=(
+            "octopusdeploy"
+            "dnsproviders"
+            "generic"
+            "digitalocean"
+          )
+          # generate the module classes and docs
+          for pvd in "${providers[@]}"; do
+            echo "generating the modules & docs for provider '$pvd'"
+            python3 -m scripts.generate "$pvd"
+          done
+          python3 -m scripts.update
       - name: Update badges
         run: |
           VERSION=$(git tag --list | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | sort -V | tail -n1 | sed 's/^v//')

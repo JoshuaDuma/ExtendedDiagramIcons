@@ -7,7 +7,9 @@ This repo contains the python library used to create the pip package ExtendedDia
 [![Development Build Version](https://github.com/JoshuaDuma/ExtendedDiagramIcons/blob/dev/docs/data/development_build.svg)](https://github.com/JoshuaDuma/ExtendedDiagramIcons/blob/main/docs/data/stable_build.svg)
 
 <!-- START_SECTION:InstallLatestDevelopment -->
-- Install latest build: `pip install ExtendedDiagramIcons==development`
+
+    - Install latest development build: `pip install ExtendedDiagramIcons==1.1.0.dev15`
+    
 <!-- END_SECTION:InstallLatestDevelopment -->
 <!-- START_SECTION:InstallLatestStable -->
 - Install latest build: `pip install ExtendedDiagramIcons==stable`
