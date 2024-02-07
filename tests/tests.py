@@ -3,6 +3,7 @@ from diagrams import Node, Diagram, Cluster
 from ExtendedDiagramIcons.dnsproviders.namecheap import Provider, Namecheap_Api, Namecheap_Domain
 from ExtendedDiagramIcons.generic import Github, Jira, Report_Portal, Software_Engineer
 from ExtendedDiagramIcons.octopusdeploy import Octopus_Deploy, Octopus_Server_Node, Octopus_Worker_Node, Octopus_Worker_Pool, Pipeline, Release
+from ExtendedDiagramIcons.digitalocean import Project
 
 class TestCase(unittest.TestCase):
     def test_icon_map(self):
@@ -20,6 +21,7 @@ class TestCase(unittest.TestCase):
             Octopus_Worker_Pool("Octopus_Worker_Pool")
             Pipeline("Pipeline")
             Release("Release")
+            Project("DO Project")
 
 if __name__ == "__main__":
     unittest.main()

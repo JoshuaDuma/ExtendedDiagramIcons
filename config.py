@@ -14,7 +14,8 @@ DIR_TEMPLATE = "templates"
 PROVIDERS = (
   "octopusdeploy",
   "dnsproviders",
-  "generic"
+  "generic",
+  "digitalocean"
 )
 
 #########################
@@ -31,7 +32,8 @@ CMD_SVG2PNG_IM_OPTS = ("-shave", "25%x25%", "-resize", "256x256!")
 FILE_PREFIXES = {
     "octopusdeploy": (),
     "dnsproviders": (),
-    "generic": ()
+    "generic": (),
+    "digitalocean": ()
 }
 
 #########################

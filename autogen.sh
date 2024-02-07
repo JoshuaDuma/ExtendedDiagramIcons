@@ -7,6 +7,7 @@ providers=(
   "octopusdeploy"
   "dnsproviders"
   "generic"
+  "digitalocean"
 )
 
 # generate the module classes and docs
