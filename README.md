@@ -3,17 +3,15 @@
 This repo contains the python library used to create the pip package ExtendedDiagramIcons to extend the Diagrams package: [Diagrams GitHub Repository](https://github.com/mingrammer/diagrams).
 
 ## Current Builds
-[![Stable Build Version](https://github.com/JoshuaDuma/ExtendedDiagramIcons/blob/main/docs/data/stable_build.svg)](https://github.com/JoshuaDuma/ExtendedDiagramIcons/blob/main/docs/data/stable_build.svg)
-[![Development Build Version](https://github.com/JoshuaDuma/ExtendedDiagramIcons/blob/dev/docs/data/development_build.svg)](https://github.com/JoshuaDuma/ExtendedDiagramIcons/blob/main/docs/data/stable_build.svg)
+[![Stable Build Version](https://github.com/JoshuaDuma/ExtendedDiagramIcons/blob/main/docs/data/stable_build.svg)](https://github.com/JoshuaDuma/ExtendedDiagramIcons/tree/main)
+[![Development Build Version](https://github.com/JoshuaDuma/ExtendedDiagramIcons/blob/dev/docs/data/development_build.svg)](https://github.com/JoshuaDuma/ExtendedDiagramIcons/tree/dev)
 
 <!-- START_SECTION:InstallLatestDevelopment -->
 
- - Install latest development build: `pip install ExtendedDiagramIcons==1.1.0.dev18`
-    
 <!-- END_SECTION:InstallLatestDevelopment -->
 <!-- START_SECTION:InstallLatestStable -->
 
-- Install latest stable build: `pip install ExtendedDiagramIcons==1.1.0`
+- Install latest stable build: `pip install ExtendedDiagramIcons==1.1.0.dev15`
     
 <!-- END_SECTION:InstallLatestStable -->
 
