@@ -6,8 +6,8 @@ on:
       - 'dev'
 
 jobs:
-  UpdateVersion:
-    name: Update Files
+  FileUpdate:
+    name: File Update
     runs-on: ubuntu-latest
     needs: [ Publish ]
     permissions:
@@ -17,13 +17,13 @@ jobs:
       id-token: write # to enable use of OIDC for npm provenance
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
     - name: Update badges
         run : |
-          VERSION=$(git tag --list | grep -E 'v[0-9]+\.[0-9]+\.[0-9]+-[^ ]+' | sort -V | tail -n1 | sed 's/^v//' | sed 's/-dev\./.dev/')
-          python3 -m scripts.badge "dev" $VERSION
+          VERSION=$(git tag --list | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | sort -V | tail -n1 | sed 's/^v//')
+          python3 -m scripts.badge "stable" $VERSION
     - name: Commit and Push
       run: |
         git config --global user.name 'Joshua Duma'
