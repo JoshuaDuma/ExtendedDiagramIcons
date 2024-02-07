@@ -1,9 +1,24 @@
 # Diagram Icons Extention
 
-This repo contains the python library used to create the pip package ExtendedDiagramIcons.
+This repo contains the python library used to create the pip package ExtendedDiagramIcons to extend the Diagrams package: [Diagrams GitHub Repository](https://github.com/mingrammer/diagrams).
+
+## Current Builds
+[![Stable Build Version](https://github.com/JoshuaDuma/ExtendedDiagramIcons/blob/main/docs/data/stable_build.svg)](https://github.com/JoshuaDuma/ExtendedDiagramIcons/blob/main/docs/data/stable_build.svg)
+[![Development Build Version](https://github.com/JoshuaDuma/ExtendedDiagramIcons/blob/dev/docs/data/development_build.svg)](https://github.com/JoshuaDuma/ExtendedDiagramIcons/blob/main/docs/data/stable_build.svg)
+
+<!-- START_SECTION:InstallLatestDevelopment -->
+- Install latest build: `pip install ExtendedDiagramIcons==development`
+<!-- END_SECTION:InstallLatestDevelopment -->
+<!-- START_SECTION:InstallLatestStable -->
+- Install latest build: `pip install ExtendedDiagramIcons==stable`
+<!-- END_SECTION:InstallLatestStable -->
 
 ## Usage
-This is intended to be used in a project that uses the diagrams python pip package as an extention of the available icons. To import the latest build of this library into your project use `pip install ExtendedDiagramIcons`
+This is intended to be used in a project that uses the diagrams python pip package as an extention of the available icons. To import the latest build of this library into your project use `pip install ExtendedDiagramIcons`.
+
+## Requirement
+- Python `3.9+`
+- Requires the pip package `Diagrams``
 
 ## Testing
 
@@ -19,96 +34,66 @@ To publish the latest version of this project use the following:
 
 ## Documentation
 
-To use the below files
+Use the references below to extend your diagrams. Example import: `from ExtendedDiagramIcons.diagrams.octopusdeploy.octopusdeploy import Octopus_Server_Node, Pipeline`.
 
 <!-- START_SECTION:Documentation -->
----
-id: octopusdeploy
-title: OctopusDeploy
----
 
-Node classes list of octopusdeploy provider.
 
 ## octopusdeploy.octopusdeploy
 
 
-<img width="30" src="/resources/octopusdeploy/octopus_deploy.png" alt="Octopus_Deploy" style="float: left; padding-right: 5px;" >
-**diagrams.octopusdeploy.octopusdeploy.Octopus_Deploy**
 
-<img width="30" src="/resources/octopusdeploy/octopus_server_node.png" alt="Octopus_Server_Node" style="float: left; padding-right: 5px;" >
-**diagrams.octopusdeploy.octopusdeploy.Octopus_Server_Node**
+<img width="30" src="/resources/octopusdeploy/octopus_deploy.png" alt="Octopus_Deploy" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Octopus_Deploy**
 
-<img width="30" src="/resources/octopusdeploy/octopus_worker_node.png" alt="Octopus_Worker_Node" style="float: left; padding-right: 5px;" >
-**diagrams.octopusdeploy.octopusdeploy.Octopus_Worker_Node**
+<img width="30" src="/resources/octopusdeploy/octopus_server_node.png" alt="Octopus_Server_Node" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Octopus_Server_Node**
 
-<img width="30" src="/resources/octopusdeploy/octopus_worker_pool.png" alt="Octopus_Worker_Pool" style="float: left; padding-right: 5px;" >
-**diagrams.octopusdeploy.octopusdeploy.Octopus_Worker_Pool**
+<img width="30" src="/resources/octopusdeploy/octopus_worker_node.png" alt="Octopus_Worker_Node" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Octopus_Worker_Node**
 
-<img width="30" src="/resources/octopusdeploy/pipeline.png" alt="Pipeline" style="float: left; padding-right: 5px;" >
-**diagrams.octopusdeploy.octopusdeploy.Pipeline**
+<img width="30" src="/resources/octopusdeploy/octopus_worker_pool.png" alt="Octopus_Worker_Pool" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Octopus_Worker_Pool**
 
-<img width="30" src="/resources/octopusdeploy/release.png" alt="Release" style="float: left; padding-right: 5px;" >
-**diagrams.octopusdeploy.octopusdeploy.Release**
+<img width="30" src="/resources/octopusdeploy/pipeline.png" alt="Pipeline" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Pipeline**
+
+<img width="30" src="/resources/octopusdeploy/release.png" alt="Release" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Release**
 
 
----
-id: dnsproviders
-title: DNSProviders
----
 
-Node classes list of dnsproviders provider.
 
-## dnsproviders.dnsproviders
+
 
 
 ## dnsproviders.namecheap
 
 
-<img width="30" src="/resources/dnsproviders/namecheap/namecheap_api.png" alt="Namecheap_Api" style="float: left; padding-right: 5px;" >
-**diagrams.dnsproviders.namecheap.Namecheap_Api**
 
-<img width="30" src="/resources/dnsproviders/namecheap/namecheap_domain.png" alt="Namecheap_Domain" style="float: left; padding-right: 5px;" >
-**diagrams.dnsproviders.namecheap.Namecheap_Domain**
+<img width="30" src="/resources/dnsproviders/namecheap/namecheap_api.png" alt="Namecheap_Api" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.dnsproviders.namecheap.Namecheap_Api**
 
-<img width="30" src="/resources/dnsproviders/namecheap/provider.png" alt="Provider" style="float: left; padding-right: 5px;" >
-**diagrams.dnsproviders.namecheap.Provider**
+<img width="30" src="/resources/dnsproviders/namecheap/namecheap_domain.png" alt="Namecheap_Domain" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.dnsproviders.namecheap.Namecheap_Domain**
+
+<img width="30" src="/resources/dnsproviders/namecheap/provider.png" alt="Provider" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.dnsproviders.namecheap.Provider**
 
 
----
-id: digitalocean
-title: DigitalOcean
----
 
-Node classes list of digitalocean provider.
 
 ## digitalocean.digitalocean
 
 
-<img width="30" src="/resources/digitalocean/project.png" alt="Project" style="float: left; padding-right: 5px;" >
-**diagrams.digitalocean.digitalocean.Project**
+
+<img width="30" src="/resources/digitalocean/project.png" alt="Project" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.digitalocean.digitalocean.Project**
 
 
----
-id: generic
-title: Generic
----
 
-Node classes list of generic provider.
 
 ## generic.generic
 
 
-<img width="30" src="/resources/generic/github.png" alt="Github" style="float: left; padding-right: 5px;" >
-**diagrams.generic.generic.Github**
 
-<img width="30" src="/resources/generic/jira.png" alt="Jira" style="float: left; padding-right: 5px;" >
-**diagrams.generic.generic.Jira**
+<img width="30" src="/resources/generic/github.png" alt="Github" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.generic.Github**
 
-<img width="30" src="/resources/generic/report_portal.png" alt="Report_Portal" style="float: left; padding-right: 5px;" >
-**diagrams.generic.generic.Report_Portal**
+<img width="30" src="/resources/generic/jira.png" alt="Jira" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.generic.Jira**
 
-<img width="30" src="/resources/generic/software_engineer.png" alt="Software_Engineer" style="float: left; padding-right: 5px;" >
-**diagrams.generic.generic.Software_Engineer**
+<img width="30" src="/resources/generic/report_portal.png" alt="Report_Portal" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.generic.Report_Portal**
+
+<img width="30" src="/resources/generic/software_engineer.png" alt="Software_Engineer" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.generic.Software_Engineer**
 
 
 
