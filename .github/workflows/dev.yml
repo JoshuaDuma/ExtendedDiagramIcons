@@ -37,7 +37,11 @@ jobs:
           python3 -m scripts.update
       - name: Update badges
         run: |
+          # For the development version
           VERSION=$(git tag --list | grep -E 'v[0-9]+\.[0-9]+\.[0-9]+-[^ ]+' | sort -V | tail -n1 | sed 's/^v//' | sed 's/-dev\./.dev/')
+          python3 -m scripts.badge "dev" $VERSION
+          # For the stable version
+          VERSION=$(git tag --list | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | sort -V | tail -n1 | sed 's/^v//')
           python3 -m scripts.badge "stable" $VERSION
       - name: Commit and Push
         run: |

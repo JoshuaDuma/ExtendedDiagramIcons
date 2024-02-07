@@ -72,7 +72,7 @@ if type and type == "stable":
     print("SVG badge created with build number:", build_number)
 
     string = f"""
-    - Install latest stable build: `pip install ExtendedDiagramIcons=={build_number}`
+- Install latest stable build: `pip install ExtendedDiagramIcons=={build_number}`
     """
 
     # Now, use the existing function to update the README section
@@ -97,7 +97,7 @@ elif type and type == "dev":
     print("SVG badge created with build number:", build_number)
 
     string = f"""
-    - Install latest development build: `pip install ExtendedDiagramIcons=={build_number}`
+ - Install latest development build: `pip install ExtendedDiagramIcons=={build_number}`
     """
 
     # Now, use the existing function to update the README section
