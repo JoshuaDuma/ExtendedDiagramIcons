@@ -1,4 +1,4 @@
-# ExtendedDiagramIcons
+# Diagram Icons Extention
 
 This repo contains the python library used to create the pip package ExtendedDiagramIcons.
 
@@ -7,7 +7,7 @@ This is intended to be used in a project that uses the diagrams python pip packa
 
 ## Testing
 
-To run the unit tests use this command in the ExtendedDiagramIcons directory `python3 -m unittest discover tests`.
+To run the unit tests use this command in the directory `python3 -m unittest discover tests`.
 
 ## Publish
 

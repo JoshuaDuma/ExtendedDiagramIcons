@@ -22,7 +22,6 @@ def load_tmpl(tmpl: str) -> Template:
     env.filters["up_or_title"] = up_or_title
     return env.get_template(tmpl)
 
-
 def up_or_title(pvd: str, s: str) -> str:
     if s in cfg.UPPER_WORDS.get(pvd, ()):
         return s.upper()
@@ -135,8 +134,8 @@ def generate(pvd: str) -> None:
         # Skip the top-root directory.
         typ = os.path.basename(root)
         
-        if typ == pvd:
-            continue
+        # if typ == pvd:
+        #    continue
 
         resource_root = os.path.relpath(root, base)
         classes = gen_classes(pvd, typ, paths)
