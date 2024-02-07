@@ -6,14 +6,14 @@ on:
       - 'main'
 
 jobs:
- UpdateFiles:
+  UpdateFiles:
     name: Update Files
     runs-on: ubuntu-latest
     needs: [ Publish ]
     permissions:
       contents: write # to be able to publish a GitHub release
       issues: write # to be able to comment on released issues
-      pull-requests: write # to be able to cmment on released pull requests
+      pull-requests: write # to be able to comment on released pull requests
       id-token: write # to enable use of OIDC for npm provenance
     steps:
       - name: Checkout
@@ -21,7 +21,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Update badges
-        run : |
+        run: |
           VERSION=$(git tag --list | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | sort -V | tail -n1 | sed 's/^v//')
           python3 -m scripts.badge "stable" $VERSION
       - name: Commit and Push
