@@ -80,6 +80,11 @@ if type and type == "stable":
     start_marker = '<!-- START_SECTION:InstallLatestStable -->'
     end_marker = '<!-- END_SECTION:InstallLatestStable -->'
     update_readme_section(readme_path, string, start_marker, end_marker)
+    
+    readme_path = 'README.md'
+    start_marker = '<!-- START_SECTION:InstallLatestDevelopment -->'
+    end_marker = '<!-- END_SECTION:InstallLatestDevelopment -->'
+    update_readme_section(readme_path, "", start_marker, end_marker)
 
     print("Updated README.mdwith build number:", build_number)
 
@@ -97,7 +102,7 @@ elif type and type == "dev":
     print("SVG badge created with build number:", build_number)
 
     string = f"""
- - Install latest development build: `pip install ExtendedDiagramIcons=={build_number}`
+- Install latest development build: `pip install ExtendedDiagramIcons=={build_number}`
     """
 
     # Now, use the existing function to update the README section
@@ -105,6 +110,10 @@ elif type and type == "dev":
     start_marker = '<!-- START_SECTION:InstallLatestDevelopment -->'
     end_marker = '<!-- END_SECTION:InstallLatestDevelopment -->'
     update_readme_section(readme_path, string, start_marker, end_marker)
+
+    start_marker = '<!-- START_SECTION:InstallLatestStable -->'
+    end_marker = '<!-- END_SECTION:InstallLatestStable -->'
+    update_readme_section(readme_path, "", start_marker, end_marker)
 
     print("Updated README.mdwith build number:", build_number)
 
