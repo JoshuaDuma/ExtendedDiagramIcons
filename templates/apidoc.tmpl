@@ -1,0 +1,8 @@
+{% for typ, classes in typ_classes.items() %}
+{% if classes | length > 0 %}
+## {{ pvd }}.{{ typ }}
+{% endif %}
+{% for class in classes %}
+
+<img width="30" src="/{{ class['resource_path'] }}" alt="{{ class['name'] }}" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.{{ pvd }}.{{ typ }}.{{ class['name'] }}**{% if class['alias'] %}, **{{ class['alias'] }}** (alias){% endif %}{% endfor %}
+{% endfor %}

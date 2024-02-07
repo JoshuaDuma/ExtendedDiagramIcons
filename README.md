@@ -1,13 +1,32 @@
-# ExtendedDiagramIcons
+# Diagram Icons Extention
 
-This repo contains the python library used to create the pip package ExtendedDiagramIcons.
+This repo contains the python library used to create the pip package ExtendedDiagramIcons to extend the Diagrams package: [Diagrams GitHub Repository](https://github.com/mingrammer/diagrams).
+
+## Current Builds
+[![Stable Build Version](https://github.com/JoshuaDuma/ExtendedDiagramIcons/blob/main/docs/data/stable_build.svg)](https://github.com/JoshuaDuma/ExtendedDiagramIcons/blob/main/docs/data/stable_build.svg)
+[![Development Build Version](https://github.com/JoshuaDuma/ExtendedDiagramIcons/blob/dev/docs/data/development_build.svg)](https://github.com/JoshuaDuma/ExtendedDiagramIcons/blob/main/docs/data/stable_build.svg)
+
+<!-- START_SECTION:InstallLatestDevelopment -->
+
+ - Install latest development build: `pip install ExtendedDiagramIcons==1.1.0.dev18`
+    
+<!-- END_SECTION:InstallLatestDevelopment -->
+<!-- START_SECTION:InstallLatestStable -->
+
+- Install latest stable build: `pip install ExtendedDiagramIcons==1.1.0`
+    
+<!-- END_SECTION:InstallLatestStable -->
 
 ## Usage
-This is intended to be used in a project that uses the diagrams python pip package as an extention of the available icons. To import the latest build of this library into your project use `pip install ExtendedDiagramIcons`
+This is intended to be used in a project that uses the diagrams python pip package as an extention of the available icons. To import the latest build of this library into your project use `pip install ExtendedDiagramIcons`.
+
+## Requirement
+- Python `3.9+`
+- Requires the pip package `Diagrams``
 
 ## Testing
 
-To run the unit tests use this command in the ExtendedDiagramIcons directory `python3 -m unittest discover tests`.
+To run the unit tests use this command in the directory `python3 -m unittest discover tests`.
 
 ## Publish
 
@@ -16,6 +35,73 @@ To publish the latest version of this project use the following:
 1. Install Twine: `pip install twine`
 2. Build your package: `python setup.py sdist bdist_wheel`
 3. To Upload your package, you will need your PyPI credentials (not avilable via CICD for security reasons): `twine upload dist/* -u __token__ -p <your-api-token>`
+
+## Documentation
+
+Use the references below to extend your diagrams. Example import: `from ExtendedDiagramIcons.diagrams.octopusdeploy.octopusdeploy import Octopus_Server_Node, Pipeline`.
+
+<!-- START_SECTION:Documentation -->
+
+
+## digitalocean.digitalocean
+
+
+
+<img width="30" src="/resources/digitalocean/project.png" alt="Project" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.digitalocean.digitalocean.Project**
+
+
+
+
+## generic.generic
+
+
+
+<img width="30" src="/resources/generic/github.png" alt="Github" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.generic.Github**
+
+<img width="30" src="/resources/generic/jira.png" alt="Jira" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.generic.Jira**
+
+<img width="30" src="/resources/generic/report_portal.png" alt="Report_Portal" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.generic.Report_Portal**
+
+<img width="30" src="/resources/generic/software_engineer.png" alt="Software_Engineer" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.generic.Software_Engineer**
+
+
+
+
+
+
+
+## dnsproviders.namecheap
+
+
+
+<img width="30" src="/resources/dnsproviders/namecheap/namecheap_api.png" alt="Namecheap_Api" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.dnsproviders.namecheap.Namecheap_Api**
+
+<img width="30" src="/resources/dnsproviders/namecheap/namecheap_domain.png" alt="Namecheap_Domain" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.dnsproviders.namecheap.Namecheap_Domain**
+
+<img width="30" src="/resources/dnsproviders/namecheap/provider.png" alt="Provider" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.dnsproviders.namecheap.Provider**
+
+
+
+
+## octopusdeploy.octopusdeploy
+
+
+
+<img width="30" src="/resources/octopusdeploy/octopus_deploy.png" alt="Octopus_Deploy" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Octopus_Deploy**
+
+<img width="30" src="/resources/octopusdeploy/octopus_server_node.png" alt="Octopus_Server_Node" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Octopus_Server_Node**
+
+<img width="30" src="/resources/octopusdeploy/octopus_worker_node.png" alt="Octopus_Worker_Node" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Octopus_Worker_Node**
+
+<img width="30" src="/resources/octopusdeploy/octopus_worker_pool.png" alt="Octopus_Worker_Pool" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Octopus_Worker_Pool**
+
+<img width="30" src="/resources/octopusdeploy/pipeline.png" alt="Pipeline" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Pipeline**
+
+<img width="30" src="/resources/octopusdeploy/release.png" alt="Release" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Release**
+
+
+
+<!-- END_SECTION:Documentation -->
 
 # Semantic Release
 
