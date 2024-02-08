@@ -58,9 +58,9 @@ def relative_directory_depth_with_parent(relative_path):
     return parent_str
 
 
-def gen_classes(pvd: str, typ: str, paths: Iterable[str]) -> str:
+def gen_classes(pvd: str, typ: str, paths: Iterable[str], file: str) -> str:
     """Generate all service node classes based on resources paths with class templates."""
-    tmpl = load_tmpl(cfg.TMPL_MODULE)
+    tmpl = load_tmpl(file)
 
     # TODO: extract the gen class metas for sharing
     # TODO: independent function for generating all pvd/typ/paths pairs
@@ -104,7 +104,6 @@ def gen_apidoc(pvd: str, typ_paths: dict) -> str:
             typ_classes[typ].append({"name": name, "alias": alias, "resource_path": resource_path, "app_root": app_root})
     return tmpl.render(pvd=pvd, typ_classes=typ_classes)
 
-
 def make_module(pvd: str, typ: str, classes: str) -> None:
     """Create a module file"""
     mod_path = os.path.join(app_root_dir(pvd), f"{typ}.py")
@@ -112,6 +111,12 @@ def make_module(pvd: str, typ: str, classes: str) -> None:
     with open(mod_path, "w+") as f:
         f.write(classes)
 
+def make_module_base(pvd: str, typ: str, classes: str) -> None:
+    """Create a module file"""
+    mod_path = os.path.join(app_root_dir(pvd), f"__init__.py")
+    make_directories(mod_path)
+    with open(mod_path, "w+") as f:
+        f.write(classes)
 
 def make_apidoc(pvd: str, content: str) -> None:
     """Create an api documentation file"""
@@ -134,14 +139,18 @@ def generate(pvd: str) -> None:
         # Skip the top-root directory.
         typ = os.path.basename(root)
         
-        # if typ == pvd:
-        #    continue
+        if typ == pvd:
+           typ=""
+           resource_root = os.path.relpath(root, base)
+           classes = gen_classes(pvd, typ, paths, cfg.TMPL_MODULE_BASE)
+           make_module_base(pvd, typ, classes)
+           typ_paths[typ] = (paths, resource_root)
 
-        resource_root = os.path.relpath(root, base)
-        classes = gen_classes(pvd, typ, paths)
-        make_module(pvd, typ, classes)
-
-        typ_paths[typ] = (paths, resource_root)
+        else:
+            resource_root = os.path.relpath(root, base)
+            classes = gen_classes(pvd, typ, paths, cfg.TMPL_MODULE)
+            make_module(pvd, typ, classes)
+            typ_paths[typ] = (paths, resource_root)
     # Build API documentation
     apidoc = gen_apidoc(pvd, typ_paths)
     make_apidoc(pvd, apidoc)

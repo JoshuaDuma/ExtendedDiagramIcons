@@ -41,26 +41,21 @@ Use the references below to extend your diagrams. Example import: `from Extended
 <!-- START_SECTION:Documentation -->
 
 
-## digitalocean.digitalocean
+## octopusdeploy
 
 
 
-<img width="30" src="/resources/digitalocean/project.png" alt="Project" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.digitalocean.digitalocean.Project**
+<img width="30" src="/resources/octopusdeploy/octopus_deploy.png" alt="Octopus_Deploy" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Octopus_Deploy**
 
+<img width="30" src="/resources/octopusdeploy/octopus_server_node.png" alt="Octopus_Server_Node" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Octopus_Server_Node**
 
+<img width="30" src="/resources/octopusdeploy/octopus_worker_node.png" alt="Octopus_Worker_Node" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Octopus_Worker_Node**
 
+<img width="30" src="/resources/octopusdeploy/octopus_worker_pool.png" alt="Octopus_Worker_Pool" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Octopus_Worker_Pool**
 
-## generic.generic
+<img width="30" src="/resources/octopusdeploy/pipeline.png" alt="Pipeline" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Pipeline**
 
-
-
-<img width="30" src="/resources/generic/github.png" alt="Github" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.generic.Github**
-
-<img width="30" src="/resources/generic/jira.png" alt="Jira" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.generic.Jira**
-
-<img width="30" src="/resources/generic/report_portal.png" alt="Report_Portal" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.generic.Report_Portal**
-
-<img width="30" src="/resources/generic/software_engineer.png" alt="Software_Engineer" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.generic.Software_Engineer**
+<img width="30" src="/resources/octopusdeploy/release.png" alt="Release" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Release**
 
 
 
@@ -81,23 +76,26 @@ Use the references below to extend your diagrams. Example import: `from Extended
 
 
 
-## octopusdeploy.octopusdeploy
+## digitalocean
 
 
 
-<img width="30" src="/resources/octopusdeploy/octopus_deploy.png" alt="Octopus_Deploy" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Octopus_Deploy**
-
-<img width="30" src="/resources/octopusdeploy/octopus_server_node.png" alt="Octopus_Server_Node" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Octopus_Server_Node**
-
-<img width="30" src="/resources/octopusdeploy/octopus_worker_node.png" alt="Octopus_Worker_Node" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Octopus_Worker_Node**
-
-<img width="30" src="/resources/octopusdeploy/octopus_worker_pool.png" alt="Octopus_Worker_Pool" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Octopus_Worker_Pool**
-
-<img width="30" src="/resources/octopusdeploy/pipeline.png" alt="Pipeline" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Pipeline**
-
-<img width="30" src="/resources/octopusdeploy/release.png" alt="Release" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.octopusdeploy.Release**
+<img width="30" src="/resources/digitalocean/project.png" alt="Project" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.digitalocean.Project**
 
 
+
+
+## generic
+
+
+
+<img width="30" src="/resources/generic/github.png" alt="Github" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.Github**
+
+<img width="30" src="/resources/generic/jira.png" alt="Jira" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.Jira**
+
+<img width="30" src="/resources/generic/report_portal.png" alt="Report_Portal" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.Report_Portal**
+
+<img width="30" src="/resources/generic/software_engineer.png" alt="Software_Engineer" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.Software_Engineer**
 
 <!-- END_SECTION:Documentation -->
 
