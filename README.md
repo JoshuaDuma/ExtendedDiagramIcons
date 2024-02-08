@@ -8,7 +8,7 @@ This repo contains the python library used to create the pip package ExtendedDia
 
 <!-- START_SECTION:InstallLatestDevelopment -->
 
-- Install latest development build: `pip install ExtendedDiagramIcons==1.1.0.dev19`
+- Install latest development build: `pip install ExtendedDiagramIcons==1.2.1.dev1`
     
 <!-- END_SECTION:InstallLatestDevelopment -->
 <!-- START_SECTION:InstallLatestStable -->
@@ -41,41 +41,6 @@ Use the references below to extend your diagrams. Example import: `from Extended
 <!-- START_SECTION:Documentation -->
 
 
-## octopusdeploy
-
-
-
-<img width="30" src="/resources/octopusdeploy/octopus_deploy.png" alt="Octopus_Deploy" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Octopus_Deploy**
-
-<img width="30" src="/resources/octopusdeploy/octopus_server_node.png" alt="Octopus_Server_Node" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Octopus_Server_Node**
-
-<img width="30" src="/resources/octopusdeploy/octopus_worker_node.png" alt="Octopus_Worker_Node" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Octopus_Worker_Node**
-
-<img width="30" src="/resources/octopusdeploy/octopus_worker_pool.png" alt="Octopus_Worker_Pool" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Octopus_Worker_Pool**
-
-<img width="30" src="/resources/octopusdeploy/pipeline.png" alt="Pipeline" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Pipeline**
-
-<img width="30" src="/resources/octopusdeploy/release.png" alt="Release" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Release**
-
-
-
-
-
-
-
-## dnsproviders.namecheap
-
-
-
-<img width="30" src="/resources/dnsproviders/namecheap/namecheap_api.png" alt="Namecheap_Api" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.dnsproviders.namecheap.Namecheap_Api**
-
-<img width="30" src="/resources/dnsproviders/namecheap/namecheap_domain.png" alt="Namecheap_Domain" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.dnsproviders.namecheap.Namecheap_Domain**
-
-<img width="30" src="/resources/dnsproviders/namecheap/provider.png" alt="Provider" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.dnsproviders.namecheap.Provider**
-
-
-
-
 ## digitalocean
 
 
@@ -96,6 +61,43 @@ Use the references below to extend your diagrams. Example import: `from Extended
 <img width="30" src="/resources/generic/report_portal.png" alt="Report_Portal" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.Report_Portal**
 
 <img width="30" src="/resources/generic/software_engineer.png" alt="Software_Engineer" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.Software_Engineer**
+
+
+
+
+
+
+
+## dnsproviders.namecheap
+
+
+
+<img width="30" src="/resources/dnsproviders/namecheap/namecheap_api.png" alt="Namecheap_Api" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.dnsproviders.namecheap.Namecheap_Api**
+
+<img width="30" src="/resources/dnsproviders/namecheap/namecheap_domain.png" alt="Namecheap_Domain" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.dnsproviders.namecheap.Namecheap_Domain**
+
+<img width="30" src="/resources/dnsproviders/namecheap/provider.png" alt="Provider" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.dnsproviders.namecheap.Provider**
+
+
+
+
+## octopusdeploy
+
+
+
+<img width="30" src="/resources/octopusdeploy/octopus_deploy.png" alt="Octopus_Deploy" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Octopus_Deploy**
+
+<img width="30" src="/resources/octopusdeploy/octopus_server_node.png" alt="Octopus_Server_Node" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Octopus_Server_Node**
+
+<img width="30" src="/resources/octopusdeploy/octopus_worker_node.png" alt="Octopus_Worker_Node" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Octopus_Worker_Node**
+
+<img width="30" src="/resources/octopusdeploy/octopus_worker_pool.png" alt="Octopus_Worker_Pool" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Octopus_Worker_Pool**
+
+<img width="30" src="/resources/octopusdeploy/pipeline.png" alt="Pipeline" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Pipeline**
+
+<img width="30" src="/resources/octopusdeploy/release.png" alt="Release" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.octopusdeploy.Release**
+
+
 
 <!-- END_SECTION:Documentation -->
 
