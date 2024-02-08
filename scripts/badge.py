@@ -58,7 +58,7 @@ def create_svg_badge_stable(build_number):
 
 type = sys.argv[1] if len(sys.argv) > 1 else "unknown"
 
-if type and type == "stable":
+if type == "stable":
     # Taking argument from bash (the build number) and storing it in a variable
     build_number = sys.argv[2] if len(sys.argv) > 1 else "unknown"
 
@@ -88,7 +88,7 @@ if type and type == "stable":
 
     print("Updated README.mdwith build number:", build_number)
 
-elif type and type == "dev":
+elif type == "dev":
     # Taking argument from bash (the build number) and storing it in a variable
     build_number = sys.argv[2] if len(sys.argv) > 1 else "unknown"
 
