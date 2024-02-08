@@ -27,6 +27,7 @@ jobs:
             "octopusdeploy"
             "dnsproviders"
             "generic"
+            "github"
             "digitalocean"
           )
           # generate the module classes and docs

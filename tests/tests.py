@@ -5,6 +5,7 @@ from ExtendedDiagramIcons.generic import Github, Jira, Report_Portal, Software_E
 from ExtendedDiagramIcons.octopusdeploy import Octopus_Deploy, Octopus_Server_Node, Octopus_Worker_Node, Octopus_Worker_Pool, Pipeline, Release
 from ExtendedDiagramIcons.digitalocean import Project
 from ExtendedDiagramIcons.digitalocean.security import Ssh_Key
+from ExtendedDiagramIcons.github import Actions_Runner
 
 class TestCase(unittest.TestCase):
     def test_icon_map(self):
@@ -24,6 +25,7 @@ class TestCase(unittest.TestCase):
             Release("Release")
             Project("DO Project")
             Ssh_Key("SSH Key")
+            Actions_Runner("Github Actions Runner")
 
 if __name__ == "__main__":
     unittest.main()

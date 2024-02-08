@@ -13,6 +13,7 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
   "octopusdeploy",
+  "github",
   "dnsproviders",
   "generic",
   "digitalocean"
@@ -33,6 +34,7 @@ FILE_PREFIXES = {
     "octopusdeploy": (),
     "dnsproviders": (),
     "generic": (),
+    "github": (),
     "digitalocean": ()
 }
 
@@ -444,6 +446,7 @@ ALIASES = {
     },
     "ibm": {},
     "generic": {},
+    "github": {},
     "openstack": {
         "user": {
             "Openstackclient": "OpenStackClient",
