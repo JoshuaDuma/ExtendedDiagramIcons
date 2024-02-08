@@ -19,7 +19,7 @@ This repo contains the python library used to create the pip package ExtendedDia
 <!-- END_SECTION:InstallLatestDevelopment -->
 <!-- START_SECTION:InstallLatestStable -->
 
-<!-- END_SECTION:InstallLatestStable -->
+<!-- END_SECTION:InstallLatestDevelopment -->
 
 ## Usage
 This is intended to be used in a project that uses the diagrams python pip package as an extention of the available icons. To import the latest build of this library into your project use `pip install ExtendedDiagramIcons`.
