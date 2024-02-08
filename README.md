@@ -18,7 +18,6 @@ This repo contains the python library used to create the pip package ExtendedDia
     
 <!-- END_SECTION:InstallLatestDevelopment -->
 <!-- START_SECTION:InstallLatestStable -->
-
 <!-- END_SECTION:InstallLatestStable -->
 
 ## Usage
