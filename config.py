@@ -47,6 +47,7 @@ TMPL_APIDOC = "apidoc.tmpl"
 #########################
 
 TMPL_MODULE = "module.tmpl"
+TMPL_MODULE_BASE = "module_base.tmpl"
 
 UPPER_WORDS = {
     "aws": ("aws", "api", "ebs", "ec2", "efs", "emr", "rds", "ml", "mq", "nat", "vpc", "waf", "sdk"),
