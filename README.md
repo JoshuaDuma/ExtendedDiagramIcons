@@ -14,7 +14,7 @@ This repo contains the python library used to create the pip package ExtendedDia
 
 <!-- START_SECTION:InstallLatestDevelopment -->
 
-- Install latest development build: `pip install ExtendedDiagramIcons==1.3.0.dev1`
+- Install latest development build: `pip install ExtendedDiagramIcons==1.3.0.dev2`
     
 <!-- END_SECTION:InstallLatestDevelopment -->
 <!-- START_SECTION:InstallLatestStable -->
@@ -74,6 +74,15 @@ Use the references below to extend your diagrams. Example import: `from Extended
 <img width="30" src="/resources/generic/report_portal.png" alt="Report_Portal" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.Report_Portal**
 
 <img width="30" src="/resources/generic/software_engineer.png" alt="Software_Engineer" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.Software_Engineer**
+
+
+
+
+## github
+
+
+
+<img width="30" src="/resources/github/actions_runner.png" alt="Actions_Runner" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.github.Actions_Runner**
 
 
 
