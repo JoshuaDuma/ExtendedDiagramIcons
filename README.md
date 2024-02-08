@@ -1,4 +1,10 @@
 # Diagram Icons Extention
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+[![pypi version](https://badge.fury.io/py/ExtendedDiagramIcons.svg)](https://badge.fury.io/py/ExtendedDiagramIcons)
+![contributors](https://img.shields.io/github/contributors/JoshuaDuma/ExtendedDiagramIcons)
+
+<a href="https://www.buymeacoffee.com/joshuaduma" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
 
 This repo contains the python library used to create the pip package ExtendedDiagramIcons to extend the Diagrams package: [Diagrams GitHub Repository](https://github.com/mingrammer/diagrams).
 
@@ -8,12 +14,11 @@ This repo contains the python library used to create the pip package ExtendedDia
 
 <!-- START_SECTION:InstallLatestDevelopment -->
 
-
+- Install latest development build: `pip install ExtendedDiagramIcons==1`
+    
 <!-- END_SECTION:InstallLatestDevelopment -->
 <!-- START_SECTION:InstallLatestStable -->
 
-- Install latest stable build: `pip install ExtendedDiagramIcons==1.2.1`
-    
 <!-- END_SECTION:InstallLatestStable -->
 
 ## Usage
@@ -116,6 +121,7 @@ We use GitHub Actions to automate our release workflows. The badge above indicat
 
 In our project, we adhere to [Semantic Versioning](https://semver.org/) to standardize version numbers and to convey meaning about the underlying code with each release. Below is an explanation of the prefixes we use in our commit messages and how they relate to our release strategy:
 
+<!-- 
 ## Commit Prefixes
 
 ### 1. `feat:`
@@ -245,3 +251,4 @@ By adhering to this strategy, we ensure consistency, predictability, and ease of
 - **main Branch (Release):**
   - When changes are merged from `dev` to `main`, it checks for commits with `feat:` or `fix:` prefixes.
   - If found, it increments the appropriate version number (minor for `feat:` and patch for `fix`)
+-->
