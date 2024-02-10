@@ -4,6 +4,8 @@
 
 
 
+<img width="30" src="/resources/generic/docker.png" alt="Docker" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.Docker**
+
 <img width="30" src="/resources/generic/github.png" alt="Github" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.Github**
 
 <img width="30" src="/resources/generic/jira.png" alt="Jira" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.Jira**

@@ -14,7 +14,7 @@ This repo contains the python library used to create the pip package ExtendedDia
 
 <!-- START_SECTION:InstallLatestDevelopment -->
 
-- Install latest development build: `pip install ExtendedDiagramIcons==1.3.0.dev3`
+- Install latest development build: `pip install ExtendedDiagramIcons==1.3.0.dev4`
     
 <!-- END_SECTION:InstallLatestDevelopment -->
 <!-- START_SECTION:InstallLatestStable -->
@@ -66,6 +66,8 @@ Use the references below to extend your diagrams. Example import: `from Extended
 ## generic
 
 
+
+<img width="30" src="/resources/generic/docker.png" alt="Docker" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.Docker**
 
 <img width="30" src="/resources/generic/github.png" alt="Github" style="float: left; padding-right: 10px;" > **ExtendedDiagramIcons.generic.Github**
 

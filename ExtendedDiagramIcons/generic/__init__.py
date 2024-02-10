@@ -8,6 +8,8 @@ class _Generic(Node):
     _icon_dir = Path(__file__).parent.parent.parent / "resources/generic"
 
 
+class Docker(_Generic):
+    _icon = "docker.png"
 class Github(_Generic):
     _icon = "github.png"
 class Jira(_Generic):
