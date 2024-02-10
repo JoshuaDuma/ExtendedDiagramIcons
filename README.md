@@ -14,7 +14,7 @@ This repo contains the python library used to create the pip package ExtendedDia
 
 <!-- START_SECTION:InstallLatestDevelopment -->
 
-- Install latest development build: `pip install ExtendedDiagramIcons==1.3.0.dev2`
+- Install latest development build: `pip install ExtendedDiagramIcons==1.3.0.dev3`
     
 <!-- END_SECTION:InstallLatestDevelopment -->
 <!-- START_SECTION:InstallLatestStable -->
